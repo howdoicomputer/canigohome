@@ -3,7 +3,7 @@
 * a GET request against the Bing Maps API that returns the duration traveled,
 * in seconds, for the route between my work and my home. It then takes said
 * duration and uses that to determine whether or not to turn on an LED light as
-* an indicator that my commute will take less than fifteen minutes.
+* an indicator that my commute will take less than sixteen minutes.
 *
 * The polling function is on a five minute interval with a fifteen second
 * wait time to give wiggle room for the API call. During those five minute intervals,
@@ -58,7 +58,7 @@ void getTravelTimeHandler(const char *event, const char *data) {
     unsigned int durationInSeconds = atoi(data);
     unsigned int durationInMinutes = (durationInSeconds / 60);
     
-    if (durationInMinutes < 15) {
+    if (durationInMinutes < 16) {
         digitalWrite(led, HIGH);
     } else {
         digitalWrite(led, LOW);
