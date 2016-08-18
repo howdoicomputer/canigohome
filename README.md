@@ -24,8 +24,8 @@ Heck yes, I *can* go home!
 Dependencies:
 
 * A Photon board.
-* An account with [particle.io](https://particle.io)
-* A [Bing Maps API key](https://msdn.microsoft.com/en-us/library/ff428642.aspx)
+* An account with [particle.io](https://particle.io).
+* A [Bing Maps API key](https://msdn.microsoft.com/en-us/library/ff428642.aspx).
 * Raw, dauntless determination.
 
 ## Order Your Goods
