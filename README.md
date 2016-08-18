@@ -36,7 +36,7 @@ The beauty of this project was that it was so easy that I went from not knowing 
 
 Once you open up your box, follow the [getting started documentation](https://docs.particle.io/guide/getting-started/start/photon/) to get your board communicating with the Particle service. Then go to their [online IDE](https://build.particle.io/build) and see if you can get the light blinking as a testament to your increasingly evident mental fortitude.
 
-Next, you'll need to go procure your very own API key for Bing Maps. Why not the 'oh so superior' Google Maps API? Well, it's because they're stupid. Google is stupid. That's right, I said it. They don't don't allow regular consumer accounts to query for route durations *that include* traffic effects. Why do you have to break my heart like that, Google? Anyways, Both Bing and MapQuest have an API for returning traffic data with their route projections. I'm not a clever man and so I was confused by how to get what I wanted from MapQuest's API so I snuggled up to Bing for this project.
+Next, you'll need to go procure your very own API key for Bing Maps. Why not the 'oh so superior' Google Maps API? Well, it's because they're stupid. Google is stupid. That's right, I said it. They don't allow regular consumer accounts to query for route durations *that include* traffic effects. Why do you have to break my heart like that, Google? Anyways, Both Bing and MapQuest have an API for returning traffic data with their route projections. I'm not a clever man and so I was confused by how to get what I wanted from MapQuest's API so I snuggled up to Bing for this project.
 
 ## Bing Maps API Request
 
