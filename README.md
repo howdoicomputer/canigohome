@@ -11,9 +11,9 @@ A very small C++ program for the Photon microcontroller that turns the device in
 ```
 ## Demo
 
-![Aw, I can not go home](https://imgur.com/a/U4hBq)
+![Aw, I can not go home](https://i.imgur.com/LhgBpcO.jpg)
 
-![Heck yes, I *can* go home!]()
+![Heck yes, I *can* go home!](https://i.imgur.com/n8wxruP.jpg)
 
 # Setup
 
@@ -42,7 +42,7 @@ There, you'll see this beauty: `http://dev.virtualearth.net/REST/V1/Routes/Drivi
 
 It provides directions from Redmond to a place called Issaquah. Fun stuff. Right below that example call, however, is the full JSON body that is returned. It has a whole bunch of unimportant data fields that you have to scroll past but, five years later, you'll get to this returned key value pair: `"travelDurationTraffic":1887`.
 
-![Sweet. Baby. Jesus.](http://gph.is/28LbVLT)
+![Sweet. Baby. Jesus.](https://media.giphy.com/media/i2j51OF1D2t0c/giphy.gif)
 
 That's the good stuff. So now you need to figure out how to make that URL work for you; let me break it down.
 
