@@ -51,7 +51,7 @@ int led = D7;
 /*
 * This function handles the incoming response from our created webhook.
 *
-* If the duration value is greater than fifteen minutes then turn on the onboard
+* If the duration value is greater than sixteen minutes then turn on the onboard
 * led. Else, turn the led off.
 */
 void getTravelTimeHandler(const char *event, const char *data) {
