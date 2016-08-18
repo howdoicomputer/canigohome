@@ -88,7 +88,7 @@ Turns into this:
 
 ```http://dev.virtualearth.net/REST/V1/Routes/Driving?wp.0=No%20Name,%20CO&wp.1=Nimrod,%20MN&key=<yeah, like im going to leave my key here>```
 
-You'll end up getting a very large JSON blob back but, whatevers, the capture template functionality Particle provides will filter all that gunk out for you. What's important is you get that `travelDurationTraffic` key back so CTRL-F for it when you test our these routes.
+You'll end up getting a very large JSON blob back but, whatevers, the capture template functionality Particle provides will filter all that gunk out for you. What's important is you get that `travelDurationTraffic` key back so CTRL-F for it when you test out these routes.
 
 ## Webhooks
 
