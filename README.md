@@ -11,9 +11,13 @@ A very small C++ program for the Photon microcontroller that turns the device in
 ```
 ## Demo
 
-![Aw, I can not go home](https://i.imgur.com/LhgBpcO.jpg)
+Aw, I can not go home.
 
-![Heck yes, I *can* go home!](https://i.imgur.com/n8wxruP.jpg)
+![Aw, I can not go home](https://i.imgur.com/LhgBpcOm.jpg)
+
+Heck yes, I *can* go home!
+
+![Heck yes, I *can* go home!](https://i.imgur.com/n8wxruPm.jpg)
 
 # Setup
 
