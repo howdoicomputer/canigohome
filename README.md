@@ -102,7 +102,13 @@ Wait! You're not done yet!
 
 The value I'm checking for is less than sixteen minutes because that works for me. Be sure to change that value if it doesn't suit your needs! Maybe you want the threshold for you leaving work to be thirty minutes! Or maybe ten hours! You could be commuting from Zimbabwe to Taiwan via private jet each day for all I know.
 
-## NOTES/TODO/MISC:
+# Important People Take Their Gadgets to GO!!
+
+Yes, you can attach this bad boy to a battery pack.
+
+[!Portable as heck.](https://i.imgur.com/mNc0QIFm.jpg)
+
+# NOTES/TODO/MISC:
 
 * The code could be changed so that, instead of checking the duration, the level of traffic congestion is evaluated instead. This would make the code more portable for other people.
 * The Photon is capable of receiving data through an `HTTP POST`. It would be possible to add the ability to the code so that you can overwrite the destinations remotely. Say you work out of two offices, you can use `curl` or Twitter or whatever to change the `wp` values to match wherever you're working from.
