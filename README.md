@@ -36,7 +36,7 @@ The beauty of this project was that it was so easy that I went from not knowing 
 
 Once you open up your box, follow the [getting started documentation](https://docs.particle.io/guide/getting-started/start/photon/) to get your board communicating with the Particle service. Then go to their [online IDE](https://build.particle.io/build) and see if you can get the light blinking as a testament to your increasingly evident mental fortitude.
 
-Next, you'll need to go procure your very own API key for Bing Maps. Why not the glowing, holy superior Google Maps API? Well, it's because they're stupid. Google is stupid. That's right, I said it. They don't don't allow regular consumer accounts to query for route durations *that include* traffic effects. Why do you have to break my heart like that, Google? Anyways, Both Bing and MapQuest have an API for returning traffic data with their route projections. I'm not a clever man and I was confused by how to get what I wanted from MapQuest's API so I snuggled up to Bing for this project.
+Next, you'll need to go procure your very own API key for Bing Maps. Why not the 'oh so superior' Google Maps API? Well, it's because they're stupid. Google is stupid. That's right, I said it. They don't don't allow regular consumer accounts to query for route durations *that include* traffic effects. Why do you have to break my heart like that, Google? Anyways, Both Bing and MapQuest have an API for returning traffic data with their route projections. I'm not a clever man and so I was confused by how to get what I wanted from MapQuest's API so I snuggled up to Bing for this project.
 
 ## Bing Maps API Request
 
@@ -57,7 +57,7 @@ http://dev.virtualearth.net/REST/V1/Routes/Driving?
   \ &key=BingMapsKey
 ```
 
-That right there is the same URL broken into multiple lines. Let's first review what some of the characters in that URL *do.*
+That right there is the same URL sliced into multiple lines. To start, let's first review what some of the characters in that URL *do.*
 
 * ? - the question mark says 'here come the options that we want to specify'
 * & - the ampersand deliminates (splits up) options
@@ -65,7 +65,7 @@ That right there is the same URL broken into multiple lines. Let's first review 
 
 Alrighty, now lets look at the options we're sending.
 
-* `wp.number=` The WP stands for waypoint, I think. I didn't actually read the documentation and I'm mostly guessing.
+* `wp.number=` The WP stands for waypoint, I think. I didn't actually read the documentation and am mostly guessing.
 * `key=` The API key you need to sign the request.
 
 Alright, so utilizing this treasure trove of precious knowledge, we can construct a new link to fit our needs.
@@ -76,7 +76,7 @@ Alright, so utilizing this treasure trove of precious knowledge, we can construc
 
 So, example, say you need to get from The Dog House, FL to Smoothtown, WA. Wait, shoot, those aren't real addresses so I can't be cheeky with my example.
 
-So, example, say you need to get from [No Name, CO](https://en.wikipedia.org/wiki/No_Name,_Colorado) to [Nimrod, MN](https://en.wikipedia.org/wiki/Nimrod,_Minnesota). All you need to do is replace `wp.0=redmond%2Cwa&wp.1=Issaquah%2Cwa` with `wp.0=No Name, CO&wp.1=Nimrod, MN` in the original URL I posted and paste it into your browser.
+So, example, say you need to get from [No Name, CO](https://en.wikipedia.org/wiki/No_Name,_Colorado) to [Nimrod, MN](https://en.wikipedia.org/wiki/Nimrod,_Minnesota). Now, all you need to do is replace `wp.0=redmond%2Cwa&wp.1=Issaquah%2Cwa` with `wp.0=No Name, CO&wp.1=Nimrod, MN` in the original URL I posted and paste it into your browser.
 
 So that this:
 
@@ -106,11 +106,11 @@ The value I'm checking for is less than sixteen minutes because that works for m
 
 Yes, you can attach this bad boy to a battery pack.
 
-[!Portable as heck.](https://i.imgur.com/mNc0QIFm.jpg)
+![Portable as heck.](https://i.imgur.com/mNc0QIFm.jpg)
 
 # NOTES/TODO/MISC:
 
-* The code could be changed so that, instead of checking the duration, the level of traffic congestion is evaluated instead. This would make the code more portable for other people.
+* The code could be changed so that, instead of checking the duration, the level of traffic congestion is evaluated. This would make the code more portable for other people because then they wouldn't have to manually change the time value.
 * The Photon is capable of receiving data through an `HTTP POST`. It would be possible to add the ability to the code so that you can overwrite the destinations remotely. Say you work out of two offices, you can use `curl` or Twitter or whatever to change the `wp` values to match wherever you're working from.
 * I have a small debug function in there that prints the current time to get home to the logs portion of the Particle console.
 * The source code isn't long at all and includes additional documentation. Take a gander at it sometime.
